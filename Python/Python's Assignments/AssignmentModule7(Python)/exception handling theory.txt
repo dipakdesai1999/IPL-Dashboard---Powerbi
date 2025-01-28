@@ -1,0 +1,8 @@
+>exemption handling
+
+An exemption is abnormal condition that arises during the run time of a during a program. the macknizme of handling exeption is called exeption handling.
+
+there are mainly three key word are used.
+1.Try
+2.accept
+3.Finally 

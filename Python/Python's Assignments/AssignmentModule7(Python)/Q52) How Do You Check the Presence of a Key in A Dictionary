@@ -1,0 +1,11 @@
+#52) How Do You Check the Presence of a Key in A Dictionary?
+
+my_dict = {'name': 'Alice', 'age': 30, 'city': 'New York'}
+
+key_to_check = 'age'
+
+# Check if the key exists
+if key_to_check in my_dict:
+    print("Key exists in the dictionary.")
+else:
+    print("Key does not exist in the dictionary.")

@@ -1,0 +1,31 @@
+Object Oriented Concept:
+
+1.Class:
+	It is group of different tyoes of variables and function.
+
+2.Object:
+	It is an instance of class.
+
+3.Inheritance:
+	>The object of one class can aquire the property of object of another class.
+	>That creating a new class from an existing class is called inheritance.
+	*types of inheritance..
+	1.Single inheritance
+	2.multi level inheritance
+	3.multipul inheritance
+	4.hiraricle inheritance
+	5.hybrid inheritance
+
+4.Polymorphism:
+	One name multiple form.
+	1.compile time poly..
+		>method over loading.
+		>>>when there is more than method in a single having the same name but with the different number of arguments and their data types that is called method over loading.
+	2.run time poly..
+		>method over rising.
+		>>>when their is same method prototype in your both base class and derive class and if you called that method using the the object of derived  class only derived class method will be called you can said that method of derived class method of base class.
+
+5.Abstraction:
+	It is used for data hiding
+6.encapsulation:
+	To bind a core and data into a single unit its called encapsulation 

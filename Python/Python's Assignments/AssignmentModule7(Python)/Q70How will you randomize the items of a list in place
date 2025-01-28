@@ -1,0 +1,16 @@
+#70) How will you randomize the items of a list in place?
+'''
+To randomize (shuffle) the items of a list in place,
+you can use the shuffle() function from the random module.
+This function modifies the list directly and rearranges its items randomly
+'''
+
+import random
+
+# Sample list
+my_list = [1, 2, 3, 4, 5]
+
+# Shuffle the list in place
+random.shuffle(my_list)
+
+print(f"Shuffled list: {my_list}")
