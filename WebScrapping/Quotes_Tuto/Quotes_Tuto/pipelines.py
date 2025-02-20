@@ -10,7 +10,7 @@ from itemadapter import ItemAdapter
 
 class QuotesTutoPipeline:
 
-    def _init_(self):
+    def __init__(self):
         self.create_connection()
         self.create_table()
         
@@ -19,13 +19,13 @@ class QuotesTutoPipeline:
         self.conn = pymysql.connect(
             host = 'localhost',
             user = 'root',
-            password ='tops?123',
+            password ='1331',
             database = 'ws'
         )
-        self.curr = self.conn.cursor()
+        self.cur = self.conn.cursor()
 
     def create_table(self):
-        self.curr.execute("""
+        self.cur.execute("""
             CREATE TABLE IF NOT EXISTS q_tb (
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 quotes TEXT,
@@ -37,7 +37,7 @@ class QuotesTutoPipeline:
         
 
     def process_item(self, item, spider):
-        self.curr.execute("""
+        self.cur.execute("""
             INSERT INTO q_tb (quotes, author, tags) 
             VALUES (%s, %s, %s)
         """, (
